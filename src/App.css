@@ -1,0 +1,304 @@
+img.bookImg{
+    height: 19em;
+    width: 11em;
+    margin: 0.6em;
+    border-radius: 0.75em;
+}
+.resultTile .bookImg2{
+    height: 16em;
+    width: 10em;
+    margin: 0.6em;
+    border-radius: 0.75em;
+}
+.space{
+    height: 19em;
+    width: 2em;
+}
+
+button.listName{
+    height: 1.5em;
+    border-radius: 0.75em;
+    margin: 0.2em;
+}
+.larrow, .rarrow{
+    box-shadow: 0 7px 15px rgb(0 0 0 / 60%);
+    margin:0;
+    border:0;
+    border-color: #202123;
+    z-index: 3;
+    position: absolute;
+    opacity: 0.7;
+    align-self: center;
+    background-color: #202123;
+    color: #b7c2cc;
+    width: 3em;
+    height:3em;
+    border-radius: 1.5em;
+}
+.larrow{
+    top: calc(24em/2);
+    left: 2em;
+}
+.rarrow{
+    top: calc(24em/2);
+    right: 2em;
+}
+.scrollWrapper{
+    position: relative;
+    height: 21.3em;
+    overflow-y: hidden;
+}
+.react-horizontal-scrolling-menu--scroll-container {
+    z-index: 1;
+    overflow-x: visible;
+}
+
+.navBar{
+    height: max(12vh,4em);
+    background-color: #202123;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    align-items: flex-end;
+}
+.listName{
+    padding-left: 4em;
+}
+.navItem{
+    color: azure;
+    position: absolute;
+}
+.search{
+    color: #202123;
+    padding-left: 1em;
+    height:2em;
+    top:0.2em;
+    border-radius: 1em;
+    right: 0em;
+}
+.searchDiv{
+    position: fixed;
+    height:2em;
+    top: 4vh;
+    right: 5em;
+}
+.hamBurger{
+    top: 4vh;
+    height: max(2em,4vh);
+    width: max(2em,4vh);
+    right: 2vh;
+}
+.sIButton{
+    font-size: 2vh;
+    top: 5vh;
+    background-color: #202123;
+    right: 8vh;
+    border: none;
+}
+.Name{
+    top: 3vh;
+    width: fit-content;
+    font-size: max(2em,4vh);
+    left: 3vh;
+}
+@media (max-width: 32vh){
+    .Name{
+        visibility: hidden;
+    }
+}
+.sideBar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    background-color: #202123;
+    transition: 0.5s;
+    padding-top: 2vh;
+}
+.sideBar.expanded{
+    width: 25em
+}
+@media (max-width:480px){
+    .sideBar.expanded{
+        width:75vw;
+    }
+}
+.sideBar .closeNav{
+    
+    color: azure;
+    height: 4vh;
+    width: 4vh;
+}
+
+.dp{
+    position: relative;
+    background-size: cover;
+    background-image: url("./ddp.jpg");
+    height: 15em;
+    width: 15em;
+    border-radius: 7.5em;
+}
+.fileUpload{
+    visibility: hidden;
+}
+.imageWrapper{
+    position: relative;
+    width: fit-content;
+}
+.fapen{
+    width: 0.75em;
+    height: 0.75em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #226622;
+    color: white;
+    z-index: 1;
+    position:relative;
+    left: 5em;
+    bottom: 3em;
+}
+@media (max-width:480px){
+    .resultTile{
+        padding: 0 1vw 0 1vw;
+        margin: 0 0.5vw 0 0.5vw;
+    }
+    .search{
+        color: #202123;
+        padding-left: 1em;
+        height:2em;
+        top:0.2em;
+        border-radius: 1em;
+        right: 0em;
+    }
+    .searchDiv{
+        position: fixed;
+        height:1em;
+        top: 2vh;
+        right: 5em;
+    }
+    .space{width: 0;}
+    .navBar{
+        height: 8vh;
+    }
+    .hamBurger{
+        top: 2vh;
+        height: 4vh;
+        width: 4vh;
+        right: 2vh;
+    }
+    .sIButton{
+        font-size: 2vh;
+        top: 3vh;
+        background-color: #202123;
+        right: 8vh;
+        border: none;
+    }
+    .Name{
+        top: 1vh;
+        width: fit-content;
+        font-size: 4vh;
+        left: 3vh;
+    }
+}
+.textfield{
+    width: 75vw;
+    height: 1.75em;
+    font-size: 1em;
+
+}
+.show{
+    z-index: 1;
+    top: 0.53em;
+    right: 1.5vw;
+    position: absolute;
+}
+.searchIcon{
+    z-index: 1;
+    top: 0.7em;
+    right: 1.5vw;
+    position: absolute;
+}
+.show.dont{
+    visibility: hidden;
+}
+.resultTile{
+    display: flex;
+    width: 85vw;
+    padding: 0 min(2em,5vw) 0 min(2em,5vw);
+    margin: 0 1vw 0 1vw;
+}
+.bookTitle{
+    font-size: large;
+    font-weight: 600;
+}
+.authName{
+    color: #555;
+}
+.loader{
+    width: 10em;
+    margin: auto;
+    position:relative;
+}
+.load{
+    margin: auto;
+    position:absolute;
+}
+.icon{
+    left:2em;
+    top:2em;
+    width:4em;
+    height:4em;
+}
+.loadc{
+    width:8em;
+    height:8em;
+}
+.loader .icon{
+    background-size: cover;
+    background-image: url('icon.svg');
+}
+.loader .out{
+    animation: load 1s infinite;
+    background-size: cover;
+    background-image: url('loadout.svg');
+    animation-timing-function: linear;
+}
+.loader .in{
+    animation: load 2s infinite;
+    background-size: cover;
+    background-image: url('loadin.svg');
+    animation-timing-function: linear;
+}
+@keyframes load {
+    100% {transform: rotate(360deg);}
+  }
+.vertCent{
+    width: 100%;
+    position: absolute;
+    top: calc(50vh - 4em);
+}
+.Nums{
+    text-align: center;
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    float: left;
+    border-style: solid;
+    border-color:#202123;
+    margin: 0 0.5em;
+    position:relative;
+}
+.page{
+    height: 2em;
+    float: left;
+}
+.numWrap{
+    padding: 2em;
+    width: 42em;
+    margin: auto;
+}
+button.page{
+    padding-top: 0.75em;
+}
